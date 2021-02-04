@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Practica</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 500px; height: 719px; background: #231F20"></canvas>
+    <script src="Build/build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/build.data",
+        frameworkUrl: "Build/build.framework.js",
+        codeUrl: "Build/build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Practica",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
